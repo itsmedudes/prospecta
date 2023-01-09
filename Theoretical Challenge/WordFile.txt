@@ -1,0 +1,32 @@
+Q1. How will you tackle the challenge above?
+
+ans => 
+
+To tackle the challenge, I would first parse the CSV input to extract the cell values and formulas. Then, I would evaluate the formulas to determine the resulting values. Finally, I would write the cell values to a new CSV file.
+
+1) Read the file from the directories.
+2) Read the that csv file through BufferedReader;
+3) I have to check it contains the space or "," between the export csv file if conatins then split into part that output will give the result in the array;
+4) after spliting i have to if it conatin "=" then i have to also split again add or whatever sign those value which next to "=". 
+5) print format which give in answer.
+
+------------------------------------------------------------------
+
+Q2. What type of errors you would you check for?
+Ans =>
+
+1) Syntax errors i will make sure use proper operator and operands
+2) Referenced cells that do not exist
+3) If i got a zero in csv file i have handle that condition if any value divide by zero i will give a arthmetic exception how i handle i use double value so it solve that problem.
+4) Type errors and handling all the exception;
+
+-----------------------------------------------------------------
+
+Q3. How might a user break your code?
+Ans =>
+1) Providing invalid input to the CSV file.
+2) Attempting to reference cells that do not exist in the input.
+3) Providing formulas with syntax errors.
+4) Providing formulas that result in division by zero or other illegal operations(if will not handle then).
+
+------------------------------------------------------------------

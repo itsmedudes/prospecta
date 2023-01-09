@@ -1,7 +1,0 @@
-2. What type of errors you would you check for?
-Ans =>
-
-1) Syntax errors i will make sure use proper operator and operands
-2) Referenced cells that do not exist
-3) If i got a zero in csv file i have handle that condition if any value divide by zero i will give a arthmetic exception how i handle i use double value so it solve that problem.
-4) Type errors and handling all the exception;
