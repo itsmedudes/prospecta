@@ -1,0 +1,6 @@
+How might a user break your code?
+
+1) Providing invalid input to the CSV file.
+2) Attempting to reference cells that do not exist in the input.
+3) Providing formulas with syntax errors.
+4) Providing formulas that result in division by zero or other illegal operations(if will not handle then).

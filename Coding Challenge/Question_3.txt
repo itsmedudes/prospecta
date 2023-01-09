@@ -1,0 +1,21 @@
+3) Question: what are the key things you would consider when creating/consuming an API to ensure that it is secure and reliable?
+
+Ans:-
+
+Secure and Reliable:-
+
+1). HTTPS to secure communication between the client and the server. This will prevent evasdropping and man-in-the-middle attacks.
+
+2). We have to use Authentication and Authorize so that only authorized users can access the API.
+
+3). To avoid sensitive information being disclosed to attackers, be sure to handle errors safely.
+
+4). Encrpyt Our data which is valuable.
+
+5). Track our api and always check it is working or not, and check the External malicious api and don't use in our program.
+
+6). Regularly update the API and its dependencies to ensure that it is secure and reliable.
+
+7). Handle  all the API errors gracefully Make sure to handle API errors gracefully to ensure that the application does not crash or behave unexpectedly and give proper output to the users.
+
+8). And Use the proper validation and exception.

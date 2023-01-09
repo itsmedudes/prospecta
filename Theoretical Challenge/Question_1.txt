@@ -1,0 +1,13 @@
+1. How will you tackle the challenge above?
+
+ans => 
+
+To tackle the challenge, I would first parse the CSV input to extract the cell values and formulas. Then, I would evaluate the formulas to determine the resulting values. Finally, I would write the cell values to a new CSV file.
+
+1) Read the file from the directories.
+2) Read the that csv file through BufferedReader;
+3) I have to check it contains the space or "," between the export csv file if conatins then split into part that output will give the result in the array;
+
+4) after spliting i have to if it conatin "=" then i have to also split again add or whatever sign those value which next to "=". 
+5) print format which give in answer.
+ 
