@@ -21,27 +21,28 @@ public class EntriesController {
 
 	@Autowired
 	private EntryService entryService;
-	
-	//List of the consume API
+
+	// List of the consume API
 	@GetMapping("/")
 	public ResponseEntity<?> ConsumeExternalApi() {
 		return new ResponseEntity<>(entryService.consumeExternalApi(), HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/entries/{category}")
-	public ResponseEntity<?> getEntriesByCategory(@PathVariable("category") String category) throws EntryException{
-		return new ResponseEntity<>(entryService.searchByCategory(category),HttpStatus.OK);
+	public ResponseEntity<?> getEntriesByCategory(@PathVariable("category") String category) throws EntryException {
+		return new ResponseEntity<>(entryService.searchByCategory(category), HttpStatus.OK);
 	}
-	
+
 //	@PostMapping("/entries")
 //	public ResponseEntity<?> registerNewEntries(@RequestBody Entry entry) throws EntryException {
 //		
 //		return new ResponseEntity<>(entryService.registerNewEntry(entry),HttpStatus.CREATED);
 //	}
+	
 	@PostMapping("/entries")
 	public ResponseEntity<?> registerNewEntriesDataBase(@Valid @RequestBody EntryEntity entry) throws EntryException {
-		
-		return new ResponseEntity<>(entryService.registerNewEntryDatabase(entry),HttpStatus.CREATED);
+
+		return new ResponseEntity<>(entryService.registerNewEntryDatabase(entry), HttpStatus.CREATED);
 	}
 
 }
